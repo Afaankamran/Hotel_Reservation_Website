@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{>header}}
+  <title>Contact Us</title>
+   <script>
+
+     function fun() 
+{  
+  alert ("Thanks for your feedback");  
+ }  
+    </script>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="/public/css/style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  {{>navbar}}
+  <div>
+    <p class="main-heading m-auto" style="text-align: center; font-size:xx-large;font-weight:600">
+      Contact Us
+    </p>
+  </div>
+
+  <div class="sign-up m-auto" style="max-width: 400px;">
+
+    <form action="/contact" method="post">
+
+      <div class="Name" style="margin:20px 0px 20px 0px;">
+        <input type="Name" class="form-control" placeholder="Name" id="name" name="name">
+      </div>
+
+      <div style="margin:20px 0px 20px 0px;">
+        <input type="contact" class="form-control" placeholder="Contact" id="contact" name="contact">
+      </div>
+
+      <div style="margin:20px 0px 20px 0px;">
+        <input type="email" class="form-control" placeholder="Email" id="email" name="email">
+      </div>
+
+      <div style="margin:20px 0px 20px 0px;">
+        <textarea type="text" class="form-control" placeholder="I would like to ..." id="query" name="query"></textarea>
+      </div>
+      <div style="text-align:center;">
+        <button type="submit" class="btn btn-primary" onclick = "fun();" >Submit</button>
+      </div>
+
+  </div>
+  </form>
+
+  {{>footer}}
+</body>
+
+</html>
